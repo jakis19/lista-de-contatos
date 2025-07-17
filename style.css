@@ -1,0 +1,82 @@
+
+html,
+body {
+    height:100%;
+
+}
+
+body {
+    height: 100%; /*Define altude de 100% para html*/
+}
+body {
+    background-color: #6A5ACD;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*Define a família de fontes usada no texto*/
+    
+    display: flex; /*Aplica o layout flexbox no body*/
+    justify-content: center; /*centraliza o conteúdo horizontalmente*/
+    align-items: center; /*Centraliza o conteúdo verticalmente*/
+    flex-direction: column; /*Alinha o conteúdo no eixo vertical*/
+
+}
+
+.main-title {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.list-wrapper {
+    background-color: white; /*Define o fundo da lista como branco*/
+    width: 90%; /*Define a largura da lista como 90% do container*/
+    max-width: 500px; /*Define a largura máxima da lista como 500px*/
+    max-height: 400px; /* Define a altura máxima da lista como 400px*/
+    overflow-y: auto; /*Permite rolagem vertical quando o conteúdo ultrapassar a altura*/
+    border-radius: 5px; /* Adiciona Bordas arredondadas de 5px*/
+    box-shadow: 0 6px 9px rgba(0, 0, 0, .2);
+}
+
+.list {
+    list-style-type: none; /*Remove os marcadores da lista*/
+    padding: 0; /*Remove o espaçamento interno da lista*/
+    margin: 0; /*Remove a margem da lista*/
+}
+
+.list-item {
+    display: flex; /*Usa flexbox para oraganizar o conteúdo do item da lista*/
+    border-bottom: 1px solid #eee; /*Adiciona uma borda inferior cinza clara*/
+    padding: 16px; /*Adiciona espaçamento interno de 16px*/
+}
+
+.listem-item__imagem img {
+    width: 80px; /*Define a largura da imagem como 80px*/
+    border-radius: 50%; /*Faz a imagem ficar circular*/
+}
+
+.list-item__content {
+    padding: 0 20px; /*Adiciona espaçamento interno de 20px à direita e à esquerda*/
+    flex-grow: 1; /*Faz com que o conteúdo da lista ocupe espaço disponivel*/
+}
+
+.list-item__name {
+    font-size: 24px; /*Define o tamanho da fonte como 24 px*/
+    color: #385555; /*Define a cor do texto*/
+    margin: 0; /*Remove a margem padrão*/
+}
+
+.list-item__email {
+    margin: 5px 0 0; /*Adicona uma margem superior de 5px e nenhuma margem nas laterais ou embaixo*/
+    color: #aaa; /*Define a cor do texto cinza claro*/
+}
+
+.list-item__action {
+    display: flex; /*Usa flexbox para organizar as ações do item*/
+    gap: 16px; /*Define um espaço de 16px entre os elementos*/
+    align-items: center; /*Alinha verticalmente os elementos no centro*/
+    opacity: 0; /*inicialmente, oculta a ação com opacidade 0*/
+}
+
+.list-item:hover .list-item__action {
+    opacity: 0.3; /*Quando o item for hover, torna as ações parcialmente vísiveis*/
+}
