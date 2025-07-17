@@ -26,6 +26,8 @@ O arquivo CSS contém estilos para:
 - HTML5
 - CSS3 (Flexbox)
 
+- VEJA AQUI: https://jakis19.github.io/lista-de-contatos/
+
 ## Finalidade
 
 Este projeto foi desenvolvido como parte do meu aprendizado em CSS intermediário, com foco em estilização de componentes visuais, usabilidade e boas práticas de layout. Ele pode servir como base para implementações de listas de contatos, redes sociais ou listas de usuários.
